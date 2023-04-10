@@ -1,2 +1,51 @@
+.cube {
+  position: relative;
+  margin: 50px auto;
+  width: 200px;
+  height: 200px;
+  transform-style: preserve-3d;
+  transition: transform 1s ease;
+}
+.cube:hover {
+  transform: rotateX(360deg) rotateY(360deg);
+}
+.face {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border: 2px solid #333;
+  padding: 10px;
+  text-align: center;
+  background-color: #fff;
+  backface-visibility: hidden;
+}
+.front {
+  transform: translateZ(100px);
+}
+.back {
+  transform: rotateY(180deg) translateZ(100px);
+}
+.left {
+  transform: rotateY(-90deg) translateZ(100px);
+}
+.right {
+  transform: rotateY(90deg) translateZ(100px);
+}
+.top {
+  transform: rotateX(90deg) translateZ(100px);
+}
+.bottom {
+  transform: rotateX(-90deg) translateZ(100px);
+}
+h2 {
+  margin-top: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+p {
+  margin: 0;
+}
 
-/* Your CSS Code here. */
