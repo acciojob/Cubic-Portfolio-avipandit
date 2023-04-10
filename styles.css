@@ -1,4 +1,4 @@
-.cube {
+.scene-1 {
   position: relative;
   margin: 50px auto;
   width: 200px;
@@ -6,7 +6,7 @@
   transform-style: preserve-3d;
   transition: transform 1s ease;
 }
-.cube:hover {
+.scene-1:hover {
   transform: rotateX(360deg) rotateY(360deg);
 }
 .face {
